@@ -2,10 +2,8 @@
 Utility functions for analysis and visualization.
 """
 
-import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
+import pandas as pd
 
 
 def analyze_class_distribution(df: pd.DataFrame, level_column: str = 'level'):

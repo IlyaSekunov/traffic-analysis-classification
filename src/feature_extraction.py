@@ -3,11 +3,12 @@ Feature extraction functions for parsing raw text data.
 """
 
 import re
-import pandas as pd
-import numpy as np
 from datetime import datetime
+
+import pandas as pd
 from sklearn.preprocessing import LabelEncoder
-from config.config import (
+
+from config import (
     IT_KEYWORDS, SENIOR_KEYWORDS, MIDDLE_KEYWORDS, JUNIOR_KEYWORDS,
     JUNIOR_EXPERIENCE_MAX, MIDDLE_EXPERIENCE_MAX, MIN_SALARY, MAX_SALARY,
     TOP_CITIES_COUNT

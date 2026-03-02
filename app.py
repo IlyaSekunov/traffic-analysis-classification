@@ -4,16 +4,15 @@ Main entry point for IT Developer Level Classification.
 """
 
 import argparse
-import pandas as pd
 import warnings
-from sklearn.preprocessing import LabelEncoder
+
+import pandas as pd
 
 from src.data_preprocessing import (
-    load_and_rename_columns, filter_it_resumes,
-    prepare_features_dataframe, handle_missing_values
+    load_and_rename_columns
 )
 from src.feature_extraction import extract_all_features
-from src.model import train_model
+from src.model import train_model, split_and_scale_data
 from src.utils import (
     analyze_class_distribution, analyze_errors,
     generate_business_conclusion

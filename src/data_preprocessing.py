@@ -3,7 +3,7 @@ Data loading and preprocessing functions.
 """
 
 import pandas as pd
-import numpy as np
+
 from src.feature_extraction import is_it_position
 
 

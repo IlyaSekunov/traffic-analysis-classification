@@ -2,15 +2,15 @@
 Model training and evaluation functions.
 """
 
+import matplotlib.pyplot as plt
 import pandas as pd
-import numpy as np
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
+import seaborn as sns
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, confusion_matrix
-import matplotlib.pyplot as plt
-import seaborn as sns
-from config.config import RANDOM_STATE, TEST_SIZE, N_ESTIMATORS, MAX_DEPTH
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+
+from config import RANDOM_STATE, TEST_SIZE, N_ESTIMATORS, MAX_DEPTH
 
 
 def split_and_scale_data(X: pd.DataFrame, y: pd.Series):
